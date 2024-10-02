@@ -6,14 +6,14 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 // Type definition for the NumberGuessingComponent's state
-interface NumberGuessingState {
-  gameStarted: boolean;
-  gameOver: boolean;
-  paused: boolean;
-  targetNumber: number;
-  userGuess: number | string;
-  attempts: number;
-}
+// interface NumberGuessingState {
+//   gameStarted: boolean;
+//   gameOver: boolean;
+//   paused: boolean;
+//   targetNumber: number;
+//   userGuess: number | string;
+//   attempts: number;
+// }
 
 // Defining the NumberGuessingComponent function component
 export default function NumberGuessing(): JSX.Element {
@@ -83,7 +83,7 @@ export default function NumberGuessing(): JSX.Element {
           Number Guessing Game
         </h1>
         {/* Description of the game */}
-        <p className="text-center text-black mb-4 text-purple-800">
+        <p className="text-center  mb-4 text-purple-800">
           Try to guess the number between 1 and 10!
         </p>
         {/* Conditional rendering: show start button if game hasn't started */}
